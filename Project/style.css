@@ -1,0 +1,64 @@
+.cardb{
+    border: 1px solid;
+    padding: 2%;
+    margin: 5%;
+    font-size: 100%;
+    width: 20%;
+    border-radius: 2%;
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+button{
+    background-color: cornflowerblue;
+    color: coral;
+    padding : 3%;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    border:1px solid;
+    border-radius: 3%;
+}
+
+.img-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width:320px) and (max-width : 480px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardb{
+        font-size: 90%;
+        width: 100%;
+        background-color: cornflowerblue;
+    }
+    button{
+        font-size: 30px;
+        font-family: monospace;
+    }
+    .img-flex{
+        display :flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and(min-width:481px) and (max-width:768px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardb{
+        display: flex;
+        flex-direction: row;
+    }
+}
